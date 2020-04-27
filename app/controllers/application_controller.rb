@@ -40,6 +40,8 @@ post "/login" do
     redirect "/failure"
   end
 end
+
+
 	get "/success" do
 		if logged_in?
 			erb :success
